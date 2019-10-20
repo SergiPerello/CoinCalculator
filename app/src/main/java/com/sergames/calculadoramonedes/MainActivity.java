@@ -152,47 +152,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
         ad.show();
     }
-/*
-    private void dialogConEditText(final String moneda, final Conversor conversor, final Button btnClicked) {
-        AlertDialog ad;
-
-        ad = new AlertDialog.Builder(this).create();
-        ad.setTitle("Factor de conversió");
-        ad.setMessage("Quin es el factor de conversió del " + moneda);
-
-        // Ahora forzamos que aparezca el editText
-        final EditText edtValor = new EditText(this);
-        ad.setView(edtValor);
-
-        ad.setButton(AlertDialog.BUTTON_POSITIVE,"Aceptar", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-
-                String conversio;
-                float conversioF;
-                Button ultimaMoneda;
-
-                ultimaMoneda = conversor.getBtn();
-                conversio = edtValor.getText().toString();
-                conversioF = Float.parseFloat(conversio);
-
-                if (ultimaMoneda != null) {
-                    ultimaMoneda.setBackgroundColor(Color.parseColor("#ABABAB"));
-                }
-
-                conversor.setConversio(conversioF);
-                conversor.setUltimaMoneda(moneda);
-                conversor.setBtn(btnClicked);
-
-                btnClicked.setBackgroundColor(Color.parseColor("#000000"));
-            }
-        });
-
-        ad.show();
-
-        // el Show es asíncrono.
-
-
-    }
-
- */
 }
